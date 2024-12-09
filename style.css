@@ -23,6 +23,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
+  width: 80%;
 }
 
 .flex {
@@ -101,3 +102,29 @@ img {
         padding: 0 10px;
     }
 } */
+.animate {
+  background-color: #007bff;
+  height: 50vh;
+  margin-top: 25%;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out 0.3s;
+  width: 50%;
+}
+.animate:hover {
+  transform: rotate(45deg);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50%;
+  animation: rotate 0.5s linear 4;
+}
+
+@keyframes rotate {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
